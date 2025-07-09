@@ -1,4 +1,3 @@
-
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
@@ -19,6 +18,9 @@ const categories = [
   { id: "mobile", name: "Mobile", count: 22 },
   { id: "design", name: "Design", count: 15 },
   { id: "tools", name: "Tools", count: 8 },
+  { id: "interview", name: "Interview Resources", count: 24 },
+  { id: "challenges", name: "Coding Challenges", count: 18 },
+  { id: "news", name: "Latest News", count: 32 },
 ];
 
 const technologies = [

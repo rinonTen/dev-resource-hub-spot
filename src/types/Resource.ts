@@ -5,7 +5,7 @@ export interface Resource {
   description: string;
   url: string;
   type: "article" | "video" | "tool" | "course";
-  category: "frontend" | "backend" | "devops" | "mobile" | "design" | "tools";
+  category: "frontend" | "backend" | "devops" | "mobile" | "design" | "tools" | "interview" | "challenges" | "news";
   technologies: string[];
   languages: string[];
   usefulCount: number;

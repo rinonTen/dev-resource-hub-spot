@@ -1,4 +1,3 @@
-
 import { Resource } from "@/types/Resource";
 
 export const mockResources: Resource[] = [
@@ -169,5 +168,89 @@ export const mockResources: Resource[] = [
     favoriteCount: 134,
     dateAdded: "2023-12-12",
     author: "Rust Foundation"
+  },
+  {
+    id: "13",
+    title: "System Design Interview Questions",
+    description: "Comprehensive guide to system design interview questions with detailed solutions and explanations for scaling applications.",
+    url: "https://example.com/system-design-interview",
+    type: "article",
+    category: "interview",
+    technologies: ["System Design", "Distributed Systems", "Microservices"],
+    languages: ["System Architecture"],
+    usefulCount: 234,
+    favoriteCount: 189,
+    dateAdded: "2024-01-20",
+    author: "Interview Expert"
+  },
+  {
+    id: "14",
+    title: "LeetCode Top 150 Problems",
+    description: "Curated list of the most important coding problems to solve for technical interviews at top tech companies.",
+    url: "https://example.com/leetcode-top-150",
+    type: "tool",
+    category: "challenges",
+    technologies: ["Algorithms", "Data Structures"],
+    languages: ["Python", "Java", "JavaScript"],
+    usefulCount: 456,
+    favoriteCount: 378,
+    dateAdded: "2024-01-18",
+    author: "Coding Interview Pro"
+  },
+  {
+    id: "15",
+    title: "JavaScript Weekly Newsletter",
+    description: "Stay updated with the latest JavaScript news, libraries, tutorials, and industry trends delivered weekly.",
+    url: "https://example.com/js-weekly",
+    type: "article",
+    category: "news",
+    technologies: ["JavaScript", "Web Development"],
+    languages: ["JavaScript"],
+    usefulCount: 198,
+    favoriteCount: 145,
+    dateAdded: "2024-01-22",
+    author: "JS Weekly Team"
+  },
+  {
+    id: "16",
+    title: "React Behavioral Interview Guide",
+    description: "Master React behavioral questions with sample answers and tips for showcasing your frontend development experience.",
+    url: "https://example.com/react-behavioral-interview",
+    type: "article",
+    category: "interview",
+    technologies: ["React", "Frontend Development"],
+    languages: ["JavaScript", "TypeScript"],
+    usefulCount: 167,
+    favoriteCount: 134,
+    dateAdded: "2024-01-16",
+    author: "Frontend Interview Coach"
+  },
+  {
+    id: "17",
+    title: "HackerRank Problem Solving Path",
+    description: "Structured learning path for algorithmic problem solving with progressive difficulty levels and detailed explanations.",
+    url: "https://example.com/hackerrank-path",
+    type: "course",
+    category: "challenges",
+    technologies: ["Algorithms", "Problem Solving"],
+    languages: ["Python", "C++", "Java"],
+    usefulCount: 289,
+    favoriteCount: 212,
+    dateAdded: "2024-01-14",
+    author: "HackerRank Team"
+  },
+  {
+    id: "18",
+    title: "GitHub Trending Repositories This Week",
+    description: "Discover the most popular open-source projects and trending repositories across different programming languages.",
+    url: "https://example.com/github-trending",
+    type: "article",
+    category: "news",
+    technologies: ["Open Source", "GitHub"],
+    languages: ["Various"],
+    usefulCount: 145,
+    favoriteCount: 98,
+    dateAdded: "2024-01-21",
+    author: "GitHub Trends"
   }
 ];

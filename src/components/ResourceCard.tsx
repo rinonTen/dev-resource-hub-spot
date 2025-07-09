@@ -66,6 +66,12 @@ export const ResourceCard = ({ resource }: ResourceCardProps) => {
         return "bg-purple-100 text-purple-800";
       case "design":
         return "bg-pink-100 text-pink-800";
+      case "interview":
+        return "bg-red-100 text-red-800";
+      case "challenges":
+        return "bg-yellow-100 text-yellow-800";
+      case "news":
+        return "bg-cyan-100 text-cyan-800";
       default:
         return "bg-gray-100 text-gray-800";
     }
