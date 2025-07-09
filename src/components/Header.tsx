@@ -1,7 +1,10 @@
 
-import { Search, Filter, SortAsc } from "lucide-react";
+import { Search, Filter, SortAsc, LogIn, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 interface HeaderProps {
   searchQuery: string;
@@ -11,6 +14,22 @@ interface HeaderProps {
 }
 
 export const Header = ({ searchQuery, setSearchQuery, sortBy, setSortBy }: HeaderProps) => {
+  const navigate = useNavigate();
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    setIsAuthenticated(!!user);
+  }, []);
+
+  const handleAuthAction = () => {
+    if (isAuthenticated) {
+      navigate("/manage");
+    } else {
+      navigate("/login");
+    }
+  };
+
   return (
     <header className="bg-white/80 backdrop-blur-lg border-b border-gray-200 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
@@ -46,6 +65,20 @@ export const Header = ({ searchQuery, setSearchQuery, sortBy, setSortBy }: Heade
                 <SelectItem value="favorites">Most Favorited</SelectItem>
               </SelectContent>
             </Select>
+
+            <Button onClick={handleAuthAction} variant="outline">
+              {isAuthenticated ? (
+                <>
+                  <User className="h-4 w-4 mr-2" />
+                  Manage
+                </>
+              ) : (
+                <>
+                  <LogIn className="h-4 w-4 mr-2" />
+                  Login
+                </>
+              )}
+            </Button>
           </div>
         </div>
       </div>
